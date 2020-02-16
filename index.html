@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-    <title>Maitre D Practice App Sowmya Thogiti</title>
+    <title>Maitre D App Sowmya Thogiti</title>
     <meta charset="UTF-8" />
     <meta name=author content="Sowmya Thogiti" />
     <link rel="stylesheet" href="styles.css">
     <script src="work.js"></script>
 </head>
 <nav></nav>
-<main class="container">
+<main >
     <article>
 
         <body>
@@ -19,8 +19,7 @@
                     <label>Total Bill: </label>
                     <input type="number" name="total" id="total" placeholder="Total bill">
                     <label>Rate : </label>
-                    <input type="number" step="0.01" min="0" max="1" name="rate" id="rate" placeholder="Tip Percentage"
-                        style="height: 25px;">
+                    <input type="number" step="0.01" min="0" max="100" name="rate" id="rate" placeholder="Tip Percentage" style="height: 25px;">
                     <div id="output-group">
                         <div class="outputLabel">Tip : </div>
                         <div class="outputText" id="tip">$0</div>
@@ -29,7 +28,7 @@
                         <div class="outputLabel">Grand Total : </div>
                         <div class="outputText" id="grand">$0</div>
                     </div>
-                    <input type="submit" value="Calculate" name="submit" id="dumb" onclick="calculate()">
+                    <input type="submit" value="Calculate" name="submit" onclick="finalbill(); return false">
                 </form>
     </article>
 </main>
